@@ -1,0 +1,647 @@
+/* font */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* re */
+.po-re {position: relative;}
+.po-ab {position: absolute;}
+.dis-flex {display: flex;}
+.hidden{display: none;}
+.block{display: block;}
+.white{color: white;}
+/* .green{background-color: #23614a;} */
+
+/* init */
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ul, li {list-style: none;}
+a {text-decoration: none;color: inherit;}
+
+/* layout */
+#container {
+    width: 100vw;
+    height: inherit; 
+}
+
+/* main */
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3de85;
+}
+
+/* logo */
+#logo {
+    width: 15vw;
+    height: 40vh;
+    /* border: 1px solid red; */
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);  
+}
+
+#smile {
+    left: 2vw;
+}
+#logo-black{
+    bottom: 10vh;
+}
+#logo-pink{
+    bottom: 6vh;
+}
+#logo-green{
+    bottom: 0;
+}
+
+/* flower */
+#flower-right {
+    width: 13vw;
+    height: 26vh;
+    /* border: 1px solid red; */
+    right: 0;
+    z-index: 1;
+}
+
+#flowerOne {
+    right: 0vw;
+}
+#flowerTwo {
+    left: 0.5vw;
+    bottom: 3.5vh;
+}
+#flowerThree {
+    right: 4vw;
+    bottom: 3vh;
+}
+
+#flower-left {
+    width: 15vw;
+    height: 18vh;
+    /* border: 1px solid red; */
+    z-index: 1;
+    top: 90vh;
+}
+
+#flowerFive {
+    bottom: 3vh;
+    right: 2vw;
+}
+
+/* menu */
+
+nav {
+    width: inherit;
+    height: 10vh;
+    /* border: 1px solid red; */
+    bottom: 0;
+}
+
+#sugarbear {
+    top: 79vh;
+    right: 0vw;
+    z-index: 1;
+}
+
+#main-menu {
+    width: 50vw;
+    height: inherit;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#main-menu li a {
+    color: #23614a;
+    font-family: adobe-garamond-pro;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 5px;
+}
+
+#main-menu li a:hover {
+    color: #133327;
+    /* color: #e1adb9; */
+}
+/* 메뉴 효과 */
+/* 
+#main-menu li a:hover {
+    
+} */
+
+#clickme {
+    right: 8vw;
+    bottom: 20vh;
+    font-family: adobe-garamond-pro;
+}
+main #insa {
+    bottom: 8vh;
+    left: 50vw;
+    transform: translate(-50%);
+    font-family: adobe-garamond-pro;
+    font-weight: 400;
+}
+
+
+/* section */
+/* christmas */
+#christmas {
+    width: 100vw;
+    height: 100vh;
+    background: #d50d4b;
+    background: radial-gradient(circle, #e01153 8%, #8f0933 91%);
+    mix-blend-mode: multiply;
+    /* background-color: #d50d4b; */
+    overflow: hidden;
+}
+
+#christmas #main-text {
+    width: 50vw;
+    height: 15vh;
+    /* border: 1px solid black; */
+    top: 18vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#christmas #main-text h1 {
+    color: #133327;
+    font-size: 4.3em;
+    font-family: adobe-garamond-pro;
+    font-weight: 500;
+}
+
+#christmas #main-text p {
+    color: white;
+    margin: 3vh;
+    font-size: 1.3em;
+    font-family: 'GmarketSansLight';
+}
+
+#stollen {
+    width: 25vw;
+    height: 18vh;
+    /* border: 1px solid black; */
+    color: white;
+    top: 42vh;
+    left: 25vw;
+}
+
+#present-button {
+    width: 13vw;
+    height: 6vh;
+    border: 0.5px solid white;
+    bottom: 0;
+    text-align: center;
+    line-height: 6vh;
+    transition: 0.3s;
+}
+
+#present-button:hover {
+    background-color: white;
+}
+
+#present-button:hover a {
+    color: #d50d4b;
+    font-weight: bold;
+}
+
+.sub-text {
+    line-height: 3vh;
+    font-family: '나눔스퀘어';
+}
+
+#cake {
+    width: 35vw;
+    height: 18vh;
+    /* border: 1px solid black; */
+    color: white;
+    top: 75vh;
+    right: 28vw;
+    text-align: right;
+}
+
+
+#cake-reservation-button {
+    width: 13vw;
+    height: 6vh;
+    border: 0.5px solid white;
+    bottom: 0;
+    text-align: center;
+    line-height: 6vh;
+    right: 0;
+    transition: 0.3s;
+}
+
+#cake-reservation-button:hover {
+    background-color: white;
+}
+
+#cake-reservation-button:hover a {
+    color: #d50d4b;
+    font-weight: bold;
+}
+/* food images */
+
+#stollenImg {
+    top: 31vh;
+}
+
+#bag {
+    top: 54vh;
+    left: 13vw;
+}
+
+#cakeImg {
+    right: -0.5vw;
+    bottom: -1vh;
+}
+/* bear & tree & light*/
+.light-E {
+    width: 1vw;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: #83c5c1;
+    filter:blur(5px);
+}
+
+.light-W {
+    width: 1vw;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: white;
+    filter:blur(5px);
+}
+
+#one {
+    left: 1vw;
+    top: 15vh;
+}
+
+#two {
+    left: 7vw;
+    top: 20vh;
+}
+
+#three {
+    left: 15vw;
+    top: 15vh;
+}
+
+#four {
+    left: 22vw;
+    top: 7vh;
+}
+
+#five {
+    left: 30vw;
+    top: 9vh;
+}
+
+#six {
+    right: 30vw;
+    top: 10vh;
+}
+
+#seven {
+    right: 22vw;
+    top: 7vh;
+}
+
+#eight {
+    right: 16vw;
+    top: 15vh;
+}
+#nine {
+    right: 8vw;
+    top: 20vh;
+}
+#ten {
+    right: 2vw;
+    top: 15vh;
+}
+
+#lightOdd li {
+    animation-duration: 2s;
+    animation-name: fade-type-two;
+    animation-iteration-count: infinite;
+}
+#lightEven li {
+    animation-duration: 2s;
+    animation-name: fade-type-one;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes fade-type-one {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-type-two {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+#bear-left {
+    width:30vw;
+    height: 35vh;
+    /* border: 1px solid black; */
+    bottom: 0;
+    overflow: hidden;
+}
+
+#bearOne {
+    bottom: -1vh;
+    left: -1vw;
+}
+
+#treeLeftTwo {
+    bottom: -1vh;
+}
+
+#bear-right {
+    width: 20vw;
+    height: 35vh;
+    /* border: 1px solid black; */
+    bottom: 25vh;
+    right: 0;
+    overflow: hidden;
+}
+
+#bearTwo {
+    bottom: -1vh;
+    right: 0;
+}
+#treeRightOne {
+    right: 0;
+}
+
+#treeRightTwo {
+    right: -2vw;
+    bottom: -8vh;
+}
+/* about */
+#about {
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#about section {
+    width: 25vw;
+    height: 70vh;
+    /* border: 1px solid black; */
+    margin: 20vh auto;
+}
+
+#about h3 {
+    text-align: center;
+    font-family: 'GmarketSansLight';
+}
+
+#about section #boxOne {
+    width: 20vw;
+    height: 50vh;
+    background-color: #f3de85;
+    border-radius: 10vw 10vw 0 0;
+    margin: 7vh auto;
+    box-shadow: 0px 5px 30px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#about section #boxTwo {
+    width: 20vw;
+    height: 50vh;
+    background-color: #f3de85;
+    border-radius: 10vw 10vw 0 0;
+    margin: 7vh auto;
+    box-shadow: 0px 5px 30px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+#about #buttonOne {
+    top: -14vh;
+    left: 9vw;
+    width: 7vw;
+    height: 14vh;
+    /* border: 1px solid red; */
+}
+
+#about #store button {
+    width: 7vw;
+    height: 14vh;
+    /* outline: 0; */
+    border: none;
+    background: none;
+    z-index: 1;
+    font-size: 1.2em;
+    font-family: adobe-garamond-pro;
+}
+
+
+#about #buttonTwo {
+    top: -14vh;
+    left: 9vw;
+    width: 7vw;
+    height: 14vh;
+    /* border: 1px solid red; */
+}
+
+#about #menu button {
+    width: 7vw;
+    height: 14vh;
+    /* outline: 0; */
+    border: none;
+    background: none;
+    z-index: 1;
+    font-size: 1.2em;
+    font-family: adobe-garamond-pro;
+}
+
+#about #boxOne img {
+    width: 26vw;
+}
+#about #boxTwo img {
+    width: 26vw;
+}
+
+
+/* shop */
+#shop {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fbf0e6;
+    color: #23614a;
+    
+}
+
+#shop section {
+    width: 33.333vw;
+    height: inherit;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    align-items: center;
+    padding: 15vh;
+}
+
+#shop section h3 {
+    text-align: center;
+    margin-bottom: 4vh;
+    font-family: adobe-garamond-pro;
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+#shop .view {
+    width: 7vw;
+    height: 4vh;
+    border: 0.5px solid #23614a;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 4vh;
+    margin-top: 1vh;
+    z-index: 3;
+    transition: 0.5s;
+}
+/* view hover 효과 */
+.view-hover {
+    width: 7vw;
+    height: 4vh;
+    background-color: #23614a;
+    border-radius: 25px;
+    top: 74vh;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+#shop .view a {
+    font-family: '나눔스퀘어';
+    font-weight: bold;
+}
+
+
+
+/* shop-img */
+
+#shop .img-box {
+    width: 30vw;
+    height: 50vh;
+    /* border: 1px solid red; */
+}
+
+.img-box .shopFour {
+    right: 11vw;
+    bottom: 8vh;
+}
+
+.img-box .shopThree {
+    right: 4vw;
+    bottom: 15vh;
+}
+
+.img-box .shopTwo {
+    right: 10vw;
+    top: 7vh;
+}
+
+.img-box .shopOne {
+    left: 4vw;
+    top: 15vh;
+}
+
+/* hiring*/
+#hiring {
+    width: 100vw;
+    height: 65vh;
+}
+
+#hire {
+    width: 60vw;
+    height: inherit;
+    /* border: 1px solid red; */
+    margin-left: 20vw;
+    float: left;
+    padding-left: 7vw;
+    padding-top: 12vh;   
+}
+
+#hiring h1 {
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#hiring h1 span {
+    color: #f3de85;
+}
+
+#hiring #carrers {
+    width: 10vw;
+    height: 5vh;
+    border: 0.5px solid black;
+    line-height: 5vh;
+    text-align: center;
+    margin-top: 3vh;
+    transition: 0.3s;    
+}
+
+#hiring p {
+    margin-top: 5vh;
+    font-family: '나눔스퀘어';
+    font-size: 1.2em;
+}
+
+#hiring #carrers:hover{
+    background-color: black;
+}
+
+#hiring #carrers:hover a {
+    color: white;
+}
+/* smile img */
+
+#smile-box {
+    width: 15vw;
+    height: 48vh;
+    /* border: 1px solid red; */
+    right: 5vw;
+    bottom: 3vh;
+    flex-direction: column;
+}
+
+#smile-box img {
+    margin: 0 auto;
+}
+
+/* footer */
+footer {
+    font-size: 0.7em;
+    color: #23614a;
+    width: 20vw;
+    height: 7vh;
+    /* border: 1px solid red; */
+    float: left;
+    bottom: 3vh;
+    right: 0;
+}
+
