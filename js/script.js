@@ -115,7 +115,7 @@ sugarBear.addEventListener('click', function(){
 
 text = "Welcome to the cafeknotted world..♥"
 
-var i = 0;
+let i = 0;
 function typing(){
   if(i < text.length){
     document.getElementById('insa').innerHTML += text.charAt(i);
@@ -343,18 +343,32 @@ smileL.animate(
   });
 
 
-  // trans
-  const trans = document.querySelectorAll('.trans');
-  console.log(trans);
+// trans
+const trans = document.querySelectorAll('body .trans');
+console.log(trans);
 
+window.addEventListener('scroll', ()=>{
+  if(scrollY > 250) {
+    trans[0].style.opacity = 1;
+    // trans[0].style.marginTop = '0';
+  }
 
-  window.addEventListener('scroll', () => {
-    console.log(scrollY);
-    if (scrollY >= 500) {
-      trans[0].style.opacity = "1";
-      // trans[0].style.marginTop = "-50px";
-    }else if (scroll >= 1000){
-      trans[1].style.opacity = "1";
-    }
-    
-  })
+  if(scrollY > 1440){
+    trans[1].style.opacity = 1;
+    // trans[1].style.marginTop = '0';
+  }
+
+  if(scrollY > 2150){
+    trans[2].style.opacity = 1;
+    // trans[2].style.marginTop = '0';
+    trans[3].style.opacity = 1;
+    // trans[3].style.marginTop = '0'; 
+    trans[4].style.opacity = 1;
+    // trans[4].style.marginTop = '0';
+  }
+
+  if(scrollY > 3000) {
+    trans[5].style.opacity = 1;
+    // trans[5].style.marginTop = '0';
+  }
+});

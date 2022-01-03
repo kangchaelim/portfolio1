@@ -15,6 +15,9 @@
 .hidden{display: none;}
 .block{display: block;}
 .white{color: white;}
+.opa-1 {opacity: 1;}
+.opa-0 {opacity: 0;}
+
 /* .green{background-color: #23614a;} */
 
 /* init */
@@ -647,12 +650,8 @@ footer {
 }
 
 /* trans */
-/* .trans {
+.trans {
+    transition: 1500ms;
+    /* margin-top: 10vh; */
     opacity: 0;
-    transition: 1000ms;
-} */
-
-.trans:nth-child(1){opacity: 0; transition: 1000ms;}
-.trans:nth-child(2){opacity: 0; transition: 1000ms;}
-.trans:nth-child(3){opacity: 0; transition: 1000ms;}
-.trans:nth-child(4){opacity: 0; transition: 1000ms;}
+}
