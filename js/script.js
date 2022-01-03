@@ -350,25 +350,19 @@ console.log(trans);
 window.addEventListener('scroll', ()=>{
   if(scrollY > 250) {
     trans[0].style.opacity = 1;
-    // trans[0].style.marginTop = '0';
   }
 
   if(scrollY > 1440){
     trans[1].style.opacity = 1;
-    // trans[1].style.marginTop = '0';
   }
 
   if(scrollY > 2150){
     trans[2].style.opacity = 1;
-    // trans[2].style.marginTop = '0';
     trans[3].style.opacity = 1;
-    // trans[3].style.marginTop = '0'; 
     trans[4].style.opacity = 1;
-    // trans[4].style.marginTop = '0';
   }
 
   if(scrollY > 3000) {
     trans[5].style.opacity = 1;
-    // trans[5].style.marginTop = '0';
   }
 });

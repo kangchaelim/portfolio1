@@ -652,6 +652,5 @@ footer {
 /* trans */
 .trans {
     transition: 1500ms;
-    /* margin-top: 10vh; */
     opacity: 0;
 }
