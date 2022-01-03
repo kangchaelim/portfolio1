@@ -227,7 +227,6 @@ console.log(buttonOne);
 const  storeItemsOne = document.querySelectorAll('body .storeItemsOne')
 console.log(storeItemsOne);
 
-// 버튼을 두번 눌러야 실행이 된다. 해결하려면?
 for (let i = 0; i < menuItemsTwo.length; i++) {
 }
 
@@ -342,3 +341,20 @@ smileL.animate(
       duration :2000,
       iterations : Infinity
   });
+
+
+  // trans
+  const trans = document.querySelectorAll('.trans');
+  console.log(trans);
+
+
+  window.addEventListener('scroll', () => {
+    console.log(scrollY);
+    if (scrollY >= 500) {
+      trans[0].style.opacity = "1";
+      // trans[0].style.marginTop = "-50px";
+    }else if (scroll >= 1000){
+      trans[1].style.opacity = "1";
+    }
+    
+  })
