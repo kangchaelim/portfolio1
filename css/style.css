@@ -197,7 +197,8 @@ main #insa {
     /* border: 1px solid black; */
     color: white;
     top: 42vh;
-    left: 25vw;
+    left: 5vw;
+    transition: 3s;
 }
 
 #present-button {
@@ -230,8 +231,9 @@ main #insa {
     /* border: 1px solid black; */
     color: white;
     top: 75vh;
-    right: 28vw;
+    right: 8vw;
     text-align: right;
+    transition: 3s;
 }
 
 
@@ -258,16 +260,20 @@ main #insa {
 
 #stollenImg {
     top: 31vh;
+    left: -20vw;
+    transition: 3s;
 }
 
 #bag {
     top: 54vh;
-    left: 13vw;
+    left: -7vw;
+    transition: 3s;
 }
 
 #cakeImg {
-    right: -0.5vw;
+    right: -20.5vw;
     bottom: -1vh;
+    transition: 3s;
 }
 /* bear & tree & light*/
 .light-E {

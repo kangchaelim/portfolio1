@@ -346,12 +346,27 @@ smileL.animate(
 // trans
 const trans = document.querySelectorAll('body .trans');
 console.log(trans);
+const stollen = document.getElementById('stollen');
+console.log(stollen);
+const cake = document.getElementById('cake');
+console.log(cake);
+const stollenImg = document.getElementById('stollenImg');
+const bag = document.getElementById('bag');
+const cakeImg = document.getElementById('cakeImg');
 
 window.addEventListener('scroll', ()=>{
   if(scrollY > 250) {
     trans[0].style.opacity = 1;
+    stollen.style.marginLeft = '20vw';
+    stollenImg.style.marginLeft = '20vw';
+    bag.style.marginLeft = '20vw';
   }
 
+  if(scrollY > 600) {
+    cake.style.marginRight = '20vw';
+    cakeImg.style.marginRight = '20vw';
+  }
+  
   if(scrollY > 1440){
     trans[1].style.opacity = 1;
   }
