@@ -150,7 +150,6 @@ main #insa {
     font-weight: 400;
 }
 
-
 /* section */
 /* christmas */
 #christmas {
@@ -174,7 +173,7 @@ main #insa {
 }
 
 #christmas #main-text h1 {
-    color: #133327;
+    color: #23614a;
     font-size: 4.3em;
     font-family: adobe-garamond-pro;
     font-weight: 500;
@@ -185,6 +184,11 @@ main #insa {
     margin: 3vh;
     font-size: 1.3em;
     font-family: 'GmarketSansLight';
+}
+#christmas #main-text span {
+    color: #d50d4b;
+    font-size: 1.4em;
+    font-weight: bold;
 }
 
 #stollen {
@@ -420,7 +424,10 @@ main #insa {
 
 #about h3 {
     text-align: center;
-    font-family: 'GmarketSansLight';
+    color: #23614a;
+    font-family: adobe-garamond-pro;
+    font-weight: 500;
+    font-size: 1.6em;
 }
 
 #about section #boxOne {
@@ -543,8 +550,6 @@ main #insa {
     font-family: '나눔스퀘어';
     font-weight: bold;
 }
-
-
 
 /* shop-img */
 
