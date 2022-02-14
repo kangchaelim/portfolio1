@@ -226,9 +226,11 @@ const buttonOne = document.querySelector('#buttonOne');
 console.log(buttonOne);
 const  storeItemsOne = document.querySelectorAll('body .storeItemsOne')
 console.log(storeItemsOne);
+const clickOne = document.querySelector('#buttonOne button');
+const clickTwo = document.querySelector('#buttonTwo button');
 
-for (let i = 0; i < menuItemsTwo.length; i++) {
-}
+// for (let i = 0; i < menuItemsTwo.length; i++) {
+// }
 
 let index = 1;
 buttonTwo.addEventListener('click', function () {
@@ -246,9 +248,6 @@ buttonTwo.addEventListener('click', function () {
   }
 });
 
-for (let i = 0; i < menuItemsTwo.length; i++) {
-}
-
 let k = 1;
 buttonOne.addEventListener('click', function () {
   if (k < storeItemsOne.length) {
@@ -264,6 +263,27 @@ buttonOne.addEventListener('click', function () {
     k = 1;
   }
 });
+
+// click! animation
+clickTwo.animate(
+  [
+     {transform: 'scale(1)'},
+     {transform: 'scale(1.1)'}
+  ],
+  {
+      duration : 800,
+      iterations : Infinity
+  });
+
+  clickOne.animate(
+    [
+       {transform: 'scale(1)'},
+       {transform: 'scale(1.1)'}
+    ],
+    {
+        duration : 800,
+        iterations : Infinity
+    });
 
 // shop view 효과
 const button = document.querySelectorAll('body .view');
