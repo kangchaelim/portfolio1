@@ -401,7 +401,7 @@ window.addEventListener('scroll', ()=>{
     trans[1].style.opacity = 1;
   }
 
-  if(scrollY > 1900){
+  if(scrollY > 2100){
     // trans[2].style.opacity = 1;
     // trans[3].style.opacity = 1;
     // trans[4].style.opacity = 1;
