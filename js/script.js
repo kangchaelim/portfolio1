@@ -268,20 +268,22 @@ buttonOne.addEventListener('click', function () {
 clickTwo.animate(
   [
      {transform: 'scale(1)'},
-     {transform: 'scale(1.1)'}
+     {transform: 'scale(1.1)'},
+     {transform: 'scale(1)'},
   ],
   {
-      duration : 800,
+      duration : 900,
       iterations : Infinity
   });
 
   clickOne.animate(
     [
        {transform: 'scale(1)'},
-       {transform: 'scale(1.1)'}
+       {transform: 'scale(1.1)'},
+       {transform: 'scale(1)'},
     ],
     {
-        duration : 800,
+        duration : 900,
         iterations : Infinity
     });
 
