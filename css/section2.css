@@ -1,0 +1,112 @@
+/* about */
+#about {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* about 배경 */
+#about .doughnutBg {
+    z-index: -1;
+}
+
+#about .doughnutBg img{
+    height: 100vh;
+}
+
+#about .whiteBg {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 0;
+}
+
+#about section {
+    width: 25vw;
+    height: 70vh;
+    /* border: 1px solid black; */
+    margin: 20vh auto;
+}
+
+#about #store {
+    left: 5vw;
+}
+
+#about #menu {
+    right: 5vw;
+}
+
+#about h3 {
+    text-align: center;
+    color: #23614a;
+    font-family: adobe-garamond-pro;
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+#about section #boxOne {
+    width: 20vw;
+    height: 50vh;
+    background-color: #f3de85;
+    border-radius: 10vw 10vw 0 0;
+    margin: 7vh auto;
+    box-shadow: 0px 5px 30px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#about section #boxTwo {
+    width: 20vw;
+    height: 50vh;
+    background-color: #f3de85;
+    border-radius: 10vw 10vw 0 0;
+    margin: 7vh auto;
+    box-shadow: 0px 5px 30px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#about #buttonOne {
+    top: -14vh;
+    left: 9vw;
+    width: 7vw;
+    height: 14vh;
+    /* border: 1px solid red; */
+}
+
+#about #store button {
+    width: 7vw;
+    height: 14vh;
+    /* outline: 0; */
+    border: none;
+    background: none;
+    z-index: 1;
+    font-size: 1.2em;
+    font-family: adobe-garamond-pro;
+}
+
+
+#about #buttonTwo {
+    top: -14vh;
+    left: 9vw;
+    width: 7vw;
+    height: 14vh;
+    /* border: 1px solid red; */
+}
+
+#about #menu button {
+    width: 7vw;
+    height: 14vh;
+    /* outline: 0; */
+    border: none;
+    background: none;
+    z-index: 1;
+    font-size: 1.2em;
+    font-family: adobe-garamond-pro;
+}
+
+#about #boxOne img {
+    width: 26vw;
+}
+#about #boxTwo img {
+    width: 26vw;
+}

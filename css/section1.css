@@ -1,0 +1,264 @@
+/* section */
+/* christmas */
+#christmas {
+    width: 100vw;
+    height: 100vh;
+    background: #d50d4b;
+    background: radial-gradient(circle, #e01153 8%, #8f0933 91%);
+    mix-blend-mode: multiply;
+    /* background-color: #d50d4b; */
+    overflow: hidden;
+}
+
+#christmas #main-text {
+    width: 50vw;
+    height: 15vh;
+    /* border: 1px solid black; */
+    top: 18vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#christmas #main-text h1 {
+    color: #23614a;
+    font-size: 4.3em;
+    font-family: adobe-garamond-pro;
+    font-weight: 500;
+}
+
+#christmas #main-text p {
+    color: white;
+    margin: 3vh;
+    font-size: 1.3em;
+    font-family: 'GmarketSansLight';
+}
+#christmas #main-text span {
+    color: #d50d4b;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#stollen {
+    width: 25vw;
+    height: 18vh;
+    /* border: 1px solid black; */
+    color: white;
+    top: 42vh;
+    left: 5vw;
+    transition: 3s;
+}
+
+#present-button {
+    width: 13vw;
+    height: 6vh;
+    border: 0.5px solid white;
+    bottom: 0;
+    text-align: center;
+    line-height: 6vh;
+    transition: 0.3s;
+}
+
+#present-button:hover {
+    background-color: white;
+}
+
+#present-button:hover a {
+    color: #d50d4b;
+    font-weight: bold;
+}
+
+.sub-text {
+    line-height: 3vh;
+    font-family: '나눔스퀘어';
+}
+
+#cake {
+    width: 35vw;
+    height: 18vh;
+    /* border: 1px solid black; */
+    color: white;
+    top: 75vh;
+    right: -2vw;
+    text-align: right;
+    transition: 3s;
+}
+
+
+#cake-reservation-button {
+    width: 13vw;
+    height: 6vh;
+    border: 0.5px solid white;
+    bottom: 0;
+    text-align: center;
+    line-height: 6vh;
+    right: 0;
+    transition: 0.3s;
+}
+
+#cake-reservation-button:hover {
+    background-color: white;
+}
+
+#cake-reservation-button:hover a {
+    color: #d50d4b;
+    font-weight: bold;
+}
+/* food images */
+
+#stollenImg {
+    top: 31vh;
+    left: -20vw;
+    transition: 3s;
+}
+
+#bag {
+    top: 54vh;
+    left: -7vw;
+    transition: 3s;
+}
+
+#cakeImg {
+    right: -30.5vw;
+    bottom: -1vh;
+    transition: 3s;
+}
+/* bear & tree & light*/
+.light-E {
+    width: 1vw;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: #83c5c1;
+    filter:blur(5px);
+}
+
+.light-W {
+    width: 1vw;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: white;
+    filter:blur(5px);
+}
+
+#one {
+    left: 1vw;
+    top: 15vh;
+}
+
+#two {
+    left: 7vw;
+    top: 20vh;
+}
+
+#three {
+    left: 15vw;
+    top: 15vh;
+}
+
+#four {
+    left: 22vw;
+    top: 7vh;
+}
+
+#five {
+    left: 30vw;
+    top: 9vh;
+}
+
+#six {
+    right: 30vw;
+    top: 10vh;
+}
+
+#seven {
+    right: 22vw;
+    top: 7vh;
+}
+
+#eight {
+    right: 16vw;
+    top: 15vh;
+}
+#nine {
+    right: 8vw;
+    top: 20vh;
+}
+#ten {
+    right: 2vw;
+    top: 15vh;
+}
+
+#lightOdd li {
+    animation-duration: 2s;
+    animation-name: fade-type-two;
+    animation-iteration-count: infinite;
+}
+#lightEven li {
+    animation-duration: 2s;
+    animation-name: fade-type-one;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes fade-type-one {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-type-two {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+#bear-left {
+    width:30vw;
+    height: 35vh;
+    /* border: 1px solid black; */
+    bottom: 0;
+    overflow: hidden;
+}
+
+#bearOne {
+    bottom: -1vh;
+    left: -1vw;
+}
+
+#treeLeftTwo {
+    bottom: -1vh;
+}
+
+#bear-right {
+    width: 20vw;
+    height: 35vh;
+    /* border: 1px solid black; */
+    bottom: 25vh;
+    right: 0;
+    overflow: hidden;
+}
+
+#bearTwo {
+    bottom: -1vh;
+    right: 0;
+}
+#treeRightOne {
+    right: 0;
+}
+
+#treeRightTwo {
+    right: -2vw;
+    bottom: -8vh;
+}

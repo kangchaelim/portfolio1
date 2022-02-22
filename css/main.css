@@ -1,0 +1,117 @@
+/* main */
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3de85;
+}
+
+/* logo */
+#logo {
+    width: 15vw;
+    height: 40vh;
+    /* border: 1px solid red; */
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);  
+}
+
+#smile {
+    left: 2vw;
+}
+#logo-black{
+    bottom: 10vh;
+}
+#logo-pink{
+    bottom: 6vh;
+}
+#logo-green{
+    bottom: 0;
+}
+
+/* flower */
+#flower-right {
+    width: 13vw;
+    height: 26vh;
+    /* border: 1px solid red; */
+    right: 0;
+    z-index: 1;
+}
+
+#flowerOne {
+    right: 0vw;
+}
+#flowerTwo {
+    left: 0.5vw;
+    bottom: 3.5vh;
+}
+#flowerThree {
+    right: 4vw;
+    bottom: 3vh;
+}
+
+#flower-left {
+    width: 15vw;
+    height: 18vh;
+    /* border: 1px solid red; */
+    z-index: 1;
+    top: 90vh;
+}
+
+#flowerFive {
+    bottom: 3vh;
+    right: 2vw;
+}
+
+/* menu */
+
+nav {
+    width: inherit;
+    height: 10vh;
+    /* border: 1px solid red; */
+    bottom: 0;
+}
+
+#sugarbear {
+    top: 79vh;
+    right: 0vw;
+    z-index: 1;
+}
+
+#main-menu {
+    width: 50vw;
+    height: inherit;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#main-menu li a {
+    color: #23614a;
+    font-family: adobe-garamond-pro;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 5px;
+}
+
+#main-menu li a:hover {
+    color: #133327;
+    /* color: #e1adb9; */
+}
+/* 메뉴 효과 */
+/* 
+#main-menu li a:hover {
+    
+} */
+
+#clickme {
+    right: 8vw;
+    bottom: 20vh;
+    font-family: adobe-garamond-pro;
+}
+main #insa {
+    bottom: 8vh;
+    left: 50vw;
+    transform: translate(-50%);
+    font-family: adobe-garamond-pro;
+    font-weight: 400;
+}

@@ -1,0 +1,65 @@
+/* hiring*/
+#hiring {
+    width: 100vw;
+    height: 65vh;
+}
+
+#hire {
+    width: 60vw;
+    height: inherit;
+    /* border: 1px solid red; */
+    margin-left: 20vw;
+    float: left;
+    padding-left: 7vw;
+    padding-top: 12vh;   
+}
+
+#hiring h1 {
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20vh;
+    transition: 1.5s;
+}
+
+#hiring h1 span {
+    color: #f3de85;
+}
+
+#hiring #carrers {
+    width: 10vw;
+    height: 5vh;
+    border: 0.5px solid black;
+    line-height: 5vh;
+    text-align: center;
+    margin-top: 47vh;
+    transition: 1.5s;  
+}
+
+#hiring p {
+    margin-top: 42vh;
+    font-family: '나눔스퀘어';
+    font-size: 1.2em;
+    transition: 1.5s;
+}
+
+#hiring #carrers:hover{
+    background-color: black;
+}
+
+#hiring #carrers:hover a {
+    color: white;
+}
+/* smile img */
+
+#smile-box {
+    width: 15vw;
+    height: 48vh;
+    /* border: 1px solid red; */
+    right: 5vw;
+    bottom: 3vh;
+    flex-direction: column;
+}
+
+#smile-box img {
+    margin: 0 auto;
+}

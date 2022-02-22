@@ -1,0 +1,11 @@
+/* footer */
+footer {
+    font-size: 0.7em;
+    color: #23614a;
+    width: 20vw;
+    height: 7vh;
+    /* border: 1px solid red; */
+    float: left;
+    bottom: 3vh;
+    right: 0;
+}
