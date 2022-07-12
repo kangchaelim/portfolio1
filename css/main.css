@@ -208,7 +208,7 @@ section.product ul li:nth-child(1) {left: 200px; top: 500px;}
 section.product ul li:nth-child(2) {right: 200px; top: 150px;}
 section.product ul li:nth-child(3) {right: 300px; top: 1000px;}
 section.product ul li .txt h2 {color: #23614a; font-weight: 800;}
-section.product ul li .txt>a {display: block; width: 100%; height: 100%; margin-top: 5px; color: #feaabe; font-size: 1.1em;}
+section.product ul li .txt>a {display: block; width: 100%; height: 100%; margin-top: 5px; color: #feaabe; font-size: 1.1rem;}
 section.product .background img {position: absolute;}
 section.product .background img:first-child {left: -50px; top: 5%;}
 section.product .background img:last-child {right: -50px; top: 30%;}
