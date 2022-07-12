@@ -1,248 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe Notted</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/section1.css">
-    <link rel="stylesheet" href="./css/section2.css">
-    <link rel="stylesheet" href="./css/section3.css">
-    <link rel="stylesheet" href="./css/section4.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    
-    <link rel="stylesheet" href="https://use.typekit.net/rsm3vzq.css">
+    <title>Cafe Knotted</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/splitting.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
 </head>
 <body>
-    <div id="container" class="po-re">
-        <div id="flower-right" class="po-ab">
-        <img src="images/main/flower1.png" id="flowerOne" class="po-ab" alt="flower">
-        <img src="images/main/flower2.png" id="flowerTwo" class="po-ab" alt="flower">
-        <img src="images/main/flower3.png" id="flowerThree" class="po-ab" alt="flower">
-        </div>
-
-        <div id="flower-left" class="po-ab">
-            <img src="images/main/flower4.png" id="flowerFour" class="po-ab" alt="flower">
-            <img src="images/main/flower5.png" id="flowerFive" class="po-ab" alt="flower">
-            </div>
-
-        <img src="images/main/sugarbear.png" id="sugarbear" class="po-ab" alt="sugarbear">
-        <main class="po-re">
-            <div id="logo" class="po-ab"><a href="#">
-                <img src="images/main/smile.png" alt="logo" id="smile" class="po-ab">
-                <img src="images/main/logo-black.png" alt="logo" id="logo-black" class="po-ab">
-                <img src="images/main/logo-pink.png" alt="logo" id="logo-pink" class="po-ab">
-                <img src="images/main/logo-green.png" alt="logo" id="logo-green" class="po-ab">
-            </a>
-        </div>
-            <nav class="po-ab">
-                <ul id="main-menu" class="dis-flex hidden">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">MENU</a></li>
-                    <li><a href="#">STORE</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">CAREERS</a></li>
-                    <li><a href="#">Q&A</a></li>
-                    <li><a href="#">SNS</a></li>
+    <div class="wrap">
+        <!-- menuOpen -->
+        <div class="menuOpen">
+            <button class="open">
+                <img src="img/main/sugarbear.png" alt="메뉴열기">
+                <h3 class="en0">click me !</h3>
+            </button>
+            <div class="menuWrap">
+                <div class="close"><img src="img/main/close.png" alt="closebutton-img"></div>
+                <div class="close en1">close</div>
+                <ul class="en0 animate" data-animate="motion">
+                    <li><a href="#"><span><b>About</b></span></a></li>
+                    <li><a href="#"><span><b>Menu</b></span></a></li>
+                    <li><a href="#"><span><b>Store</b></span></a></li>
+                    <li><a href="#"><span><b>Shop</b></span></a></li>
+                    <li><a href="#"><span><b>Carrers</b></span></a></li>
+                    <li><a href="#"><span><b>Q&A</b></span></a></li>
                 </ul>
-            </nav>
-
-            <p id="clickme" class="po-ab"><a href="#"></a>click me !</a></p>
-            <p id="insa" class="po-ab"></p>
-           
-        </main>
-
-        <section id="christmas" class="po-re">
-            <div class="christmasBg">
-                <img src="images/section1/christmasBg.jpg" alt="christmasBg">
-            </div>
-
-            <div class="trans">
-                <div id="main-text" class="po-ab">
-                    <h1>MERRY CHRISTMAS</h1>
-                    <p>노티드&nbsp; <span> 슈톨렌 & 케익</span> &nbsp;과 함께 &nbsp;&nbsp;<span>크리스마스</span>&nbsp;&nbsp; 를 기다려보아요!</p>
-                </div>
-            <ul id="lightOdd">
-                <li id="one" class="light-E po-ab"></li>
-                <li id="three" class="light-E po-ab"></li>
-                <li id="five" class="light-E po-ab"></li>
-                <li id="seven" class="light-E po-ab"></li>
-                <li id="nine" class="light-E po-ab"></li>
-            </ul>
-
-            <ul id="lightEven">
-                <li id="two" class="light-W po-ab"></li>
-                <li id="four" class="light-W po-ab"></li>
-                <li id="six" class="light-W po-ab"></li>
-                <li id="eight" class="light-W po-ab"></li>
-                <li id="ten" class="light-W po-ab"></li>
-            </ul>
-
-            <div id="bear-left" class="po-ab">
-                <img src="images/section1/bear-left.png" id="bearOne" class="po-ab" alt="bear">
-                <img src="images/section1/tree-left-2.png" id="treeLeftTwo" class="po-ab" alt="tree">
-                <img src="images/section1/tree-left-1.png" class="po-ab" alt="tree">
-            </div>
-
-            <div id="bear-right" class="po-ab">
-                <img src="images/section1/bear-right.png" id="bearTwo" class="po-ab" alt="bear">
-                <img src="images/section1/tree-right-2.png" id="treeRightTwo" class="po-ab" alt="tree">
-                <img src="images/section1/tree-right-1.png" id="treeRightOne" class="po-ab" alt="tree">
-            </div>
-
-                <img src="images/section1/stollen.png" id="stollenImg" class="po-ab" alt="stollen">
-                <img src="images/section1/bag.png" id="bag" class="po-ab" alt="bag">
-         
-                <img src="images/section1/cake.png" id="cakeImg" class="po-ab" alt="cake">
-
-            <div id="stollen" class="po-ab">
-                <div class="sub-text">
-                <p>'슈톨렌'은 크리스마스를 기다리며 얇게 잘라먹는 빵입니다.<br>오랜기간 먹을 수 있어 선물로도 좋답니다.<br>사랑하는 사람들에게 선물해보세요!
-                </p>
-                </div>
-                <div id="present-button" class="po-ab"><a href="#">
-                    슈톨렌 선물세트 보러가기</a>
-                </div>
-            </div>
-
-            <div id="cake" class="po-ab">
-                <div class="sub-text">
-                <p>케익류는 12월 13일부터 25일까지는 크리스마스 디자인으로 운영됩니다.<br>13일부터 25일에 판매되는 케이크의 예약은 11/29일부터 한정으로 이루어지므로<br>선예약을 원하시는 분은 11월29일 오전10시를 기다려주세요!
-                </p>
-                </div>
-                <div id="cake-reservation-button" class="po-ab">
-                    <a href="#">케이크 예약하러가기</a>
-                </div>
             </div>
         </div>
-        </section>
-
-        <section id="about" class="po-re">
-            <div class="doughnutBg po-ab"><img src="images/section2/doughnutBg.png" alt="doughnutBg"></div>
-            <div class="whiteBg po-ab"></div>
-            <div class="dis-flex trans">    
-            <section id="store" class="po-re">
-                <h3>FIND &nbsp;A &nbsp;STORE</h3>
-                <div id="boxOne">
-                    <img class="storeItemsOne" src="images/section2/store1.png" alt="store1">
-                  <img class="storeItemsOne" src="images/section2/store2.jpg" alt="store2">
-                  <img class="storeItemsOne" src="images/section2/store3.png" alt="store3">
-                    <img class="storeItemsOne" src="images/section2/store4.png" alt="store4">
-                    <img class="storeItemsOne" src="images/section2/store5.png" alt="store5">
-                    <img class="storeItemsOne" src="images/section2/store6.png" alt="store6">
-                   <img class="storeItemsOne" src="images/section2/store7.png" alt="store7">
-                   <img class="storeItemsOne" src="images/section2/store8.png" alt="store8">
-                   <img class="storeItemsOne" src="images/section2/store9.png" alt="store9">
-
-                </div>
-
-                <div id="buttonOne" class="po-re">
-                <button class="po-ab">click!</button><img src="images/section2/flower-click.png" class="po-ab" alt="click">
-                </div>
-            </section>
-
-            <section id="menu" class="po-re">
-                <h3>PICK &nbsp;YOUR &nbsp;FAVORITE</h3>
-                <div id="boxTwo">
-                    <img class="menuItemsTwo" src="images/section2/menu1.jpg" alt="menu1">
-                  <img class="menuItemsTwo" src="images/section2/menu2.jpg" alt="menu2">
-                  <img class="menuItemsTwo" src="images/section2/menu3.jpg" alt="menu3">
-                    <img class="menuItemsTwo" src="images/section2/menu4.jpg" alt="menu4">
-                    <img class="menuItemsTwo" src="images/section2/menu5.jpg" alt="menu5">
-                    <img class="menuItemsTwo" src="images/section2/menu6.jpg" alt="menu6">
-                   <img class="menuItemsTwo" src="images/section2/menu7.jpg" alt="menu7">
-                </div>        
-                <div id="buttonTwo" class="po-re">
-                    <button class="po-ab">click!</button><img src="images/section2/flower-click.png" class="po-ab" alt="click">
-                </div>
-            </section>
-        </section>
-
-        <section id="shop" class="dis-flex po-re">
-            <section id="goods" class="dis-flex opa-0">
-                <h3>GOODS</h3>
-                <div class="img-box po-re">
-                    <img src="images/section3/goods1.jpg" class="shopOne po-ab" alt="goods">
-                    <img src="images/section3/goods2.jpg" class="shopTwo po-ab"  alt="goods">
-                    <img src="images/section3/goods3.jpg" class="shopThree po-ab" alt="goods">
-                    <img src="images/section3/goods4.jpg" class="shopFour po-ab" alt="goods">
-                </div>
-                <div class="view">
-                    <a href="#">VIEW MORE</a>
-                </div>
-                <div class="view-hover po-ab hidden">
-                </div>    
-            </section>
-            
-            <section id="made" class="dis-flex opa-0">
-                <h3>MADE</h3>
-                <div class="img-box po-re">
-                    <img src="images/section3/made1.jpg" class="shopOne po-ab" alt="made">
-                    <img src="images/section3/made2.jpg" class="shopTwo po-ab" alt="made">
-                    <img src="images/section3/made3.jpg" class="shopThree po-ab" alt="made">
-                    <img src="images/section3/made4.jpg" class="shopFour po-ab" alt="made">
-                </div>
-                <div class="view">
-                    <a href="#">VIEW MORE</a>
-                </div>
-                <div class="view-hover po-ab hidden">
-                </div>    
-            </section>
-
-            <section id="collrabo" class="dis-flex opa-0">
-                <h3>COLLRABORATION</h3>
-                <div class="img-box po-re">
-                        <img src="images/section3/collrabo1.jpg" class="shopOne po-ab" alt="collrabo">
-                        <img src="images/section3/collrabo2.jpg" class="shopTwo po-ab" alt="collrabo">
-                        <img src="images/section3/collrabo3.jpg" class="shopThree po-ab" alt="collrabo">
-                        <img src="images/section3/collrabo4.jpg" class="shopFour po-ab" alt="collrabo">
-                </div>
-                <div class="view">
-                    <a href="#">VIEW MORE</a>
-                </div>
-                   <div class="view-hover po-ab hidden">
-            </section>
-
-        </section>
-
-        <section id="hiring" class="po-re">
-            <div id="hire" class="po-re">
-                <div id="smile-box" class="po-ab dis-flex">
-                    <img src="images/footer/s.png" id="smileL" alt="smileL">
-                    <img src="images/footer/m.png" id="smileM" alt="smileM">
-                    <img src="images/footer/l.png" id="smileS" alt="smileS">
-                </div>
-            <div class="trans">  
-            <h1 class="po-ab">WE'RE 
-                <span>HIRING</span>
-                <br>
-                <span>Grow up</span>
-                together
-            </h1>
-            <p class="po-ab">카페 노티드와 함께 할 인재를 찾습니다</p>
-
-            <div id="carrers" class="po-ab">
-                <a href="#">채용정보 보러가기</a>
+        <!-- main -->
+        <section class="visual">
+            <div class="mainImg animate" data-animate="motion">
+                    <p class="img smile"><img src="img/main/smile.png" alt="smile-img"></p>
+                    <p class="img logo"><b><img src="img/main/logo-black.png" alt="logo"></p></b>
+                    <p class="img logo"><b><img src="img/main/logo-pink.png" alt="logo"></p></b>
+                    <p class="img logo"><b><img src="img/main/logo-green.png" alt="logo"></p></b>
             </div>
-            </div>  
+            <div class="subImg">
+               <img src="img/main/flower1.png" alt="flower-img">
+               <img src="img/main/flower2.png" alt="flower-img">
+               <img src="img/main/flower3.png" alt="flower-img">
+               <img src="img/main/flower4.png" alt="flower-img">
+               <img src="img/main/flower5.png" alt="flower-img">
             </div>
-            <footer class="po-ab">
-                <span>청담본점 : 서울 강남구 도산대로 53길 15 1층</span><br>
-                사업자등록번호 : 000-00-00000<br>
-                대표번호 : 0507-1426-9399 대표메일 : cafenotted@gamil.com<br>
-                Copyright ⓒ 2019, Cafe Knotted. All Rights Reserved
-            </footer> 
+            <!-- <div class="mainTxt en">
+                <h3>Welcome to the cafeknotted world..♥</h3>
+            </div> -->
         </section>
-    
-    <script src="./js/main.js"></script>
-    <script src="./js/section1.js"></script>
-    <script src="./js/section2.js"></script>
-    <script src="./js/section3.js"></script>
-    <script src="./js/section4.js"></script>
-    <script src="./js/scroll.js"></script>
-
-
+        <!-- contents -->
+        <section class="new">
+            <div class="inner animate" data-animate="motion">
+                <div class="title">
+                    <div data-splitting>노티드 <b>슈톨렌 & 케익</b> 과 함께 <b>크리스마스</b> 를 기다려보아요 !</div>
+                    <div data-splitting class="en2">Happy Merry Christmas</div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="list animate" data-animate="motion">
+                    <li>
+                        <a href="#">
+                            <p><img src="img/section1/menu1.png" alt="ginger manica honey beverage"></p>
+                            <div class="name">
+                                <h5 class="en1">GINGER MANUKA HONEY</h5>
+                                <p>진저 마누카 허니 &nbsp; <span>6.5</span></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p><img src="img/section1/menu2.png" alt="chocolate drink beverage"></p>
+                            <div class="name">
+                                <h5 class="en1">CHOCOLATE DRINK</h5>
+                                <p>초콜릿 드링크 &nbsp;<span>5.0</span></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p><img src="img/section1/menu3.png" alt="cinnamon cream latte beverage"></p>
+                            <div class="name">
+                                <h5 class="en1">CINNAMON CREAM LATTE</h5>
+                                <p>시나몬 크림 라떼 &nbsp;<span>5.5</span></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bearAndTree">
+                <div class="left">
+                    <img src="img/section1/bear-left.png" alt="tree-img">
+                    <img src="img/section1/tree-left-2.png" alt="tree-img">
+                    <img src="img/section1/tree-left-1.png" alt="tree-img">
+                </div>
+                <div class="right">
+                    <img src="img/section1/bear-right.png" alt="tree-img">
+                    <img src="img/section1/tree-right-2.png" alt="tree-img">
+                    <img src="img/section1/tree-right-1.png" alt="tree-img">
+                </div>
+            </div>
+        </section>
+        <section class="specialMenu">
+            <div class="inner animate" data-animate="motion">
+                <div class="title">
+                    <div data-splitting class="en2">Cafe Knotted</div>
+                    <div data-splitting class="en2">December Special Menu</div>
+                </div>
+            </div>
+            <ul>
+                <li class="stollen animate" data-animate="motion">
+                    <p class="img"><img src="img/section2/stollen.png" alt="stollen-img"></p>
+                    <p class="img"><img src="img/section2/bag.png" alt="stollenbag-img"></p>
+                    <div class="desc">
+                        <p>'슈톨렌'은 크리스마스를 기다리며 얇게 잘라먹는 빵입니다.<br>오랜기간 먹을 수 있어 선물로도 좋답니다.<br>사랑하는 사람들에게 선물해보세요!
+                        <a href="#" class="en0">Stollen Gift Box</a>     
+                    </div>
+                </li>
+                <li class="cake animate" data-animate="motion">
+                    <p class="img"><img src="img/section2/cake.png" alt="cake"></p>
+                    <div class="desc">
+                        케익류는 12월 13일부터 25일까지는 크리스마스 디자인으로 운영됩니다.<br>13일부터 25일에 판매되는 케이크의 예약은 11/29일부터 한정으로 이루어지므로<br>선예약을 원하시는 분은 11월29일 오전10시를 기다려주세요!
+                        <a href="#" class="en0">Cake Reservation</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="store">
+            <div class="inner animate" data-animate="motion">
+                <div class="title">
+                    <div data-splitting class="en0">OUR STORE</div>
+                    <div data-splitting>카페 노티드 지점을 소개합니다</div>
+                    <p>고객님과 가장 가까운 지점을 찾아 보세요 :)</p>
+                    <a href="#" class="more">매장 찾기</a>
+                </div>
+            </div>
+            <div class="slideBox">
+                <ul class="slide animate" data-animate="motion">
+                    <li>
+                        <a href="#">
+                            <p class="img"><span><img src="img/section3/store2.jpg" alt="store-img"></span></p>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="#">
+                            <p class="img"><span><img src="img/section3/store4.png" alt="store-img"></span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="img"><span><img src="img/section3/store5.png" alt="store-img"></span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="img"><span><img src="img/section3/store6.png" alt="store-img"></span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="img"><span><img src="img/section3/store7.png" alt="store-img"></span></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="product">
+            <ul>
+                <li class="animate" data-animate="motion">
+                    <a href="#">
+                    <p class="img"><img src="img/section4/made.png" alt="product-img"></p>
+                    <div class="txt">
+                        <h2 class="en0">MADE</h2>
+                        <a href="#" class="en0">more view</a>     
+                    </div>
+                    </a>
+                </li>
+                <li class="animate" data-animate="motion">
+                    <a href="#">
+                    <p class="img"><img src="img/section4/goods.png" alt="product-img"></p>
+                    <div class="txt">
+                        <h2 class="en0">GOODS</h2>
+                        <a href="#" class="en0">more view</a>
+                    </div>
+                    </a>
+                </li>
+                <li class="animate" data-animate="motion">
+                    <a href="#">
+                    <p class="img"><img src="img/section4/collabo.png" alt="product-img"></p>
+                    <div class="txt">
+                        <h2 class="en0">COLLABORATION</h2>
+                        <a href="#" class="en0">more view</a>
+                    </div>
+                    </a>
+                </li>
+                <div class="background">
+                    <img src="img/section4/yellowBear-left.png" alt="yellowBear-img">
+                    <img src="img/section4/yellowBear-right.png" alt="yellowBear-img">
+                 </div>
+            </ul>
+        </section>
+        <section class="carrers">
+            <div class="inner animate" data-animate="motion">
+                <div class="title">
+                    <div data-splitting class="en3">WE’RE <p>HIRING</p></div>
+                    <div data-splitting class="en3"><p>Grow up</p> together</div>
+                    <p>카페 노티드와 함께 할 인재를 찾습니다 :)</p>
+                    <a href="#" class="more">채용정보 보러가기</a>
+                </div>
+                <div class="smileBox">
+                    <img id="smileS" src="img/section5/s.png" alt="smile-img">
+                    <img id="smileM" src="img/section5/m.png" alt="smile-img">
+                    <img id="smileL" src="img/section5/l.png" alt="smile-img">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="bottom">
+                <ul>
+                    <li><a href="#"><img src="img/footer/logo-black.png" alt="logo"></a></li>
+                    <li>
+                        <b class="en0">Address</b> <br>
+                        청담본점 : 서울 강남구 도산대로 53길 15 1층 <br>
+                        사업자등록번호 : 000-00-00000
+                    </li>
+                    <li class="en0">
+                        <b>Cotacts</b> <br>
+                        <b>T</b> 0507-1426-9399<br>
+                        <b>E</b> cafenotted@gamil.com
+                    </li>
+                    <li class="en0">
+                        <b>SNS</b> <br>
+                        <a href="#">Facebook</a><br>
+                        <a href="#">Instagram</a><br>
+                        <a href="#">Youtube</a> 
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

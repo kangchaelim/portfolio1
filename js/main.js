@@ -1,128 +1,99 @@
-// 꽃 움직이기
-const flowerOne = document.querySelector('#flowerOne');
-const flowerTwo = document.querySelector('#flowerTwo');
-const flowerThree = document.querySelector('#flowerThree');
-const flowerFour = document.querySelector('#flowerFour');
-const flowerFive = document.querySelector('#flowerFive');
-
-console.log('flowerOne');
-
-flowerOne.animate(
-    [
-       {transform: 'rotate(0)'},
-       {transform: 'rotate(360deg)'}
-    ],
-    {
-        duration :20000,
-        iterations : Infinity
+// 1. 스크롤애니메이션
+$(function(){
+    $('.animate').scrolla({
+        mobile: true,  //모바일버전시 활성화
+        once: false // 스크롤시 딱 한번만 하고 싶을 땐 true
     });
+ });
 
-    flowerTwo.animate(
-      [
-         {transform: 'rotate(0)'},
-         {transform: 'rotate(-360deg)'}
-      ],
-      {
-          duration :20000,
-          iterations : Infinity
-      });
-
-    flowerThree.animate(
-      [
-         {transform: 'rotate(0)'},
-         {transform: 'rotate(360deg)'}
-      ],
-      {
-          duration :20000,
-          iterations : Infinity
-      });
-
-    flowerFour.animate(
-       [
-         {transform: 'rotate(0)'},
-         {transform: 'rotate(360deg)'}
-       ],
-       {
-          duration :20000,
-          iterations : Infinity
-        });       
-   flowerFive.animate(
-      [
-         {transform: 'rotate(0)'},
-         {transform: 'rotate(-360deg)'}
-       ],
-      {
-         duration :20000,
-         iterations : Infinity
-       }); 
-
-// click me! 움직이기
-const clickMe = document.querySelector('#clickme');
-console.log('clickMe');
-
-clickMe.animate(
-    [
-        {bottom:'18vh'},
-        {bottom :'19vh'},
-        {bottom :'18vh'}       
-    ],
-    {
-        duration :1500,
-        iterations : Infinity
-    });
-
-// 메뉴 곰돌이 클릭 시 메뉴
-const sugarBear = document.querySelector('#sugarbear');
-console.log(sugarBear);
-const mainMenu = document.querySelector('#main-menu');
-console.log(mainMenu);
-const insa = document.querySelector('#insa');
-console.log(insa);
-
-
-sugarBear.addEventListener('click', function(){
-    mainMenu.classList.toggle('hidden');
-    insa.classList.toggle('hidden');
-    mainMenu.animate([
-        {
-          opacity:0,
-          width:"0vw"
-        },
-        { 
-          opacity:1,
-          width:"50vw"
-        }
-      ], {
-        duration: 1000,
-        fill:"forwards"
-      });
-
-      insa.animate([
-        {
-          opacity:0,
-        },
-        { 
-          opacity:1,
-        }
-      ], {
-        duration: 1000,
-        fill:"forwards"
-      });
+// 2. 글자애니메이션  Splitting 데모사이트 그대로 작성 따라하기
+$(function(){
+    Splitting();
 });
 
+// 3. slick 슬라이드
+$(function(){
+    $('.slide').slick({
+        arrows:true,
+        dots:false,
+        autoplay:true,
+        infinite:true,
+        slidesToShow:2,
+        slidesToScroll:1,
+        autoplaySpeed:5000,
+        pauseOnHover:true,
+        pauseOnFoucus:true
+    });
+});
 
-// insa typing 
+// 4.배경색 변경
+$(window).on('scroll resize', function(){
+    var scrollTop = $(document).scrollTop();
+    bgColor();
+    function bgColor(){
+        if(scrollTop > 3200){
+            $('body').addClass('on');
+        }else {
+            $('body').removeClass('on');
+        }
+        if(scrollTop > 4800){
+            $('body').removeClass('on');
+        }
+    }
+});
 
-text = "Welcome to the cafeknotted world..♥"
+// smile 애니
+const smileL = document.querySelector('#smileL');
+console.log(smileL);
+const smileM = document.querySelector('#smileM');
+console.log(smileM);
+const smileS = document.querySelector('#smileS');
+console.log(smileS);
 
-let i = 0;
-function typing(){
-  if(i < text.length){
-    document.getElementById('insa').innerHTML += text.charAt(i);
-    i++;
+smileL.animate(
+  [
+     {transform: 'rotate(0deg)'},
+     {transform: 'rotate(20deg)'},
+     {transform: 'rotate(0deg)'},
+     {transform: 'rotate(-20deg)'},
+     {transform: 'rotate(0deg)'}
+  ],
+  {
+      duration :2000,
+      iterations : Infinity
+  });
 
-    setTimeout(typing, 80);
-  }
-}
+  smileM.animate(
+    [
+       {transform: 'rotate(0deg)'},
+       {transform: 'rotate(-20deg)'},
+       {transform: 'rotate(0deg)'},
+       {transform: 'rotate(20deg)'},
+       {transform: 'rotate(0deg)'}
+    ],
+    {
+        duration :2000,
+        iterations : Infinity
+    });
+  smileS.animate(
+  [
+     {transform: 'rotate(0deg)'},
+     {transform: 'rotate(20deg)'},
+     {transform: 'rotate(0deg)'},
+     {transform: 'rotate(-20deg)'},
+     {transform: 'rotate(0deg)'}
+  ],
+  {
+      duration :2000,
+      iterations : Infinity
+  });
 
-typing();
+// 5. 메뉴
+$(function(){
+    $('.menuOpen button.open').on('click', function(){
+        $('.menuOpen .menuWrap').addClass('on');
+    });
+    $('.menuOpen .menuWrap .close').on('click', function(){
+        $('.menuOpen .menuWrap').removeClass('on');
+    });
+});
