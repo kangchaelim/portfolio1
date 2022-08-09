@@ -115,7 +115,7 @@ section.new .right img:nth-child(1) {bottom: -1%; animation-name: bearAni2; anim
 }
 
 /* section.specialMenu */
-section.specialMenu {height: 90vh; background:url(../img/section2/specialMenuBg.jpg)no-repeat center/cover; position: relative; overflow: hidden;}
+section.specialMenu {height: 90vh; background:url(../img/section2/specialMenuBg.jpg)no-repeat center/cover; position: relative; overflow: hidden;  background-attachment : fixed;}
 section.specialMenu .inner {position: relative; width: 1000px; padding: 100px 120px;}
 section.specialMenu .inner .title {position: absolute; color: #fff;}
 section.specialMenu .inner .title div:nth-child(1) {font-size: 2.5rem;}
